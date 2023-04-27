@@ -1,4 +1,4 @@
-import { getAccount, getNetwork, switchNetwork as wSwitchNetwork, watchAccount, watchNetwork, Provider, fetchSigner, Signer, getProvider } from "@wagmi/core"
+import { getAccount, getNetwork, switchNetwork as wSwitchNetwork, watchAccount, watchNetwork, Provider, fetchSigner, Signer, getProvider, signTypedData, signMessage } from "@wagmi/core"
 
 const account = ref<string>()
 const chainId = ref<number | undefined>()
@@ -41,5 +41,5 @@ export const useWeb3 = () => {
         })
     }
 
-    return { account, chainId, openModal, provider, signer, switchNetwork, sendTransaction }
+    return { account, chainId, openModal, provider, signer, switchNetwork, sendTransaction, signTypedData, signMessage }
 }
