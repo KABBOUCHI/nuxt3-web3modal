@@ -21,7 +21,7 @@ const chains: Chain[] = [arbitrum, mainnet, polygon, {
         },
     }
 }]
-const projectId = '42e9e3b646c9102371bd147b3e960c39'
+const projectId = '8354195026b85d657e3692c119242c19'
 
 const { provider } = configureChains(chains, [w3mProvider({ projectId })])
 
